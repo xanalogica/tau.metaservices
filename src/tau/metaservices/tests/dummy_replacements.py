@@ -1,0 +1,3 @@
+class ReplacementRequest(object):
+    pass
+
