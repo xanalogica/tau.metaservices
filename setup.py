@@ -38,7 +38,7 @@ setup(
         "Download\n========"
     ),
 
-    # Contact and Ownership Info
+    # Contact, Repository and Ownership Info
     author = 'Jeff Rush',
     author_email="jeff@taupro.com",
     url="https://github.com/xanalogica/tau.metaservices.git",
@@ -77,4 +77,12 @@ setup(
     extras_require={
         'test': ['zope.testrunner',]
     },
+
+    entry_points="""
+        [console_scripts]
+        tplmapper = tau.metaservices:tplmapper
+        imports = tau.metaservices:imports
+        srcmapper = tau.metaservices:srcmapper
+    """,
+
 )
